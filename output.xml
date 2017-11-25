@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.6.0 on win32)" generated="20171125 14:33:41.281">
+<suite id="s1" name="Register.Spec" source="C:\Users\informatics\06-robot\test\register.spec.robot">
+<test id="s1-t1" name="Check all required fields in registration form">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://bit.ly/2BajZDe</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20171125 14:33:41.392" level="INFO">Opening browser 'chrome' to base url 'http://bit.ly/2BajZDe'.</msg>
+<status status="PASS" starttime="20171125 14:33:41.392" endtime="20171125 14:33:45.540"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=btn_submit</arg>
+</arguments>
+<msg timestamp="20171125 14:33:45.540" level="INFO">Clicking element 'id=btn_submit'.</msg>
+<status status="PASS" starttime="20171125 14:33:45.540" endtime="20171125 14:33:45.650"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>The Email field is required.</arg>
+</arguments>
+<status status="PASS" starttime="20171125 14:33:45.650" endtime="20171125 14:33:45.672"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>The Password field is required.</arg>
+</arguments>
+<status status="PASS" starttime="20171125 14:33:45.672" endtime="20171125 14:33:45.696"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>The Re-type Password field is required.</arg>
+</arguments>
+<status status="PASS" starttime="20171125 14:33:45.696" endtime="20171125 14:33:45.715"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>The Name field is required.</arg>
+</arguments>
+<status status="PASS" starttime="20171125 14:33:45.715" endtime="20171125 14:33:45.732"></status>
+</kw>
+<status status="PASS" starttime="20171125 14:33:41.392" endtime="20171125 14:33:45.732" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Register successfully when input valid data">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://bit.ly/2BajZDe</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20171125 14:33:45.733" level="INFO">Opening browser 'chrome' to base url 'http://bit.ly/2BajZDe'.</msg>
+<status status="PASS" starttime="20171125 14:33:45.733" endtime="20171125 14:33:49.695"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>58160639@go.buu.ac.th</arg>
+</arguments>
+<msg timestamp="20171125 14:33:49.696" level="INFO">Typing text '58160639@go.buu.ac.th' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20171125 14:33:49.696" endtime="20171125 14:33:49.854"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>Sirirat1</arg>
+</arguments>
+<msg timestamp="20171125 14:33:49.855" level="INFO">Typing password into text field 'id=password'.</msg>
+<status status="PASS" starttime="20171125 14:33:49.854" endtime="20171125 14:33:49.930"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=repassword</arg>
+<arg>Sirirat1</arg>
+</arguments>
+<msg timestamp="20171125 14:33:49.930" level="INFO">Typing password into text field 'id=repassword'.</msg>
+<status status="PASS" starttime="20171125 14:33:49.930" endtime="20171125 14:33:50.008"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=name</arg>
+<arg>Sirirat</arg>
+</arguments>
+<msg timestamp="20171125 14:33:50.008" level="INFO">Typing text 'Sirirat' into text field 'id=name'.</msg>
+<status status="PASS" starttime="20171125 14:33:50.008" endtime="20171125 14:33:50.094"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=btn_submit</arg>
+</arguments>
+<msg timestamp="20171125 14:33:50.094" level="INFO">Clicking element 'id=btn_submit'.</msg>
+<status status="PASS" starttime="20171125 14:33:50.094" endtime="20171125 14:33:50.267"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>58160639@go.buu.ac.th</arg>
+</arguments>
+<status status="PASS" starttime="20171125 14:33:50.267" endtime="20171125 14:33:50.289"></status>
+</kw>
+<status status="PASS" starttime="20171125 14:33:45.733" endtime="20171125 14:33:50.289" critical="yes"></status>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20171125 14:33:50.290" endtime="20171125 14:33:56.377"></status>
+</kw>
+<status status="PASS" starttime="20171125 14:33:41.281" endtime="20171125 14:33:56.377"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Register.Spec">Register.Spec</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
